@@ -13,6 +13,7 @@ class Solution {
         // }
         // return dp[0];        
 
+        // iterative approach
         if (nums.length == 0 || nums[0] == 0)
 			return 0;
 
