@@ -11,6 +11,6 @@ class Solution {
             s[endIndex] = temp;
             startIndex++;
             endIndex--;
-            }
         }
     }
+}
