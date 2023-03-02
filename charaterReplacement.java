@@ -1,6 +1,6 @@
 // Leetcode - 424
 
-class Solution{
+class Solution {
     public int characterReplacement(String s, int k) {
         int len = s.length();
         int[] count = new int[26];
