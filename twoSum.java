@@ -22,13 +22,5 @@ class Solution {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] nums = new int[n];
-        for(int i =0;i<nums.length;i++){
-            nums[i] = sc.nextInt();
-        }
-
-        int target = sc.nextInt();
-        int[] result = new int[2];
-        twoSum(nums , target);
-
-    }
+        
 }
