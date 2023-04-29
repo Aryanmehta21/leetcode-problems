@@ -18,7 +18,7 @@ class Solution {
 
 
 
-    public static void main(String[] a
+    public static void main(Stri
        
         
 }
