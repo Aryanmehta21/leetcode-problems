@@ -18,7 +18,7 @@ class Solution {
 
 
 
-    public static void main(
+    public static voi
        
         
 }
