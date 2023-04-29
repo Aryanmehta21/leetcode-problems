@@ -18,7 +18,7 @@ class Solution {
 
 
 
-    public static voi
+    public 
        
         
 }
