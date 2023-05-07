@@ -1,4 +1,3 @@
-
 class matrixReshape {
     public int[][] matrixReshape(int[][] mat, int r, int c) {
         if (mat.length * mat[0].length != r * c)
