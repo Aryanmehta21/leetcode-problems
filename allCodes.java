@@ -1,6 +1,4 @@
-public class  {
-    
-}
+
 class allCodes {
     public boolean hasAllCodes(String s, int k) {
       int count =0;
