@@ -32,6 +32,6 @@ public class RotateMatrix{
             }
             System.out.println();
         }
-
+        sc.close();
     }
 }
