@@ -17,6 +17,7 @@ public class setZeroes {
             }
             System.out.println("");
         }
+        sc.close();
     }
 
     public static void setMatrix(int[][] matrix){
@@ -44,6 +45,6 @@ public class setZeroes {
                 }
             }
         }
-
+        
     }
 }
