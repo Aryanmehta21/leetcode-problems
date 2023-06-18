@@ -8,6 +8,7 @@ public class MaximumSumSubarray {
             arr[i] = sc.nextInt();
         }
         System.out.println(maxSubarray(arr));
+        sc.close();
     }
     public static int maxSubarray(int[] nums){
         int maxSum = nums[0];
