@@ -19,20 +19,32 @@ public class MergeSortedArrays {
         sc.close();
     }
     public static void merge(int[] nums1, int m, int[] nums2, int n){
-        int i = m-1;
-        int j = n-1;
-        int k = nums1.length-1;
+        // int i = m-1;
+        // int j = n-1;
+        // int k = nums1.length-1;
 
-        while(j>=0){
-            if(i>=0&&nums1[i]>nums2[j]){
-                nums1[k] = nums1[i];
-                k--;
-                i--;
-            }else{
-                nums1[k] = nums2[j];
-                k--;
-                j--;
-            }
+        // while(j>=0){
+        //     if(i>=0&&nums1[i]>nums2[j]){
+        //         nums1[k] = nums1[i];
+        //         k--;
+        //         i--;
+        //     }else{
+        //         nums1[k] = nums2[j];
+        //         k--;
+        //         j--;
+        //     }
+        // }
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i =0;i<m;i++){
+            list.add(nums1[i]);
+        }
+        for(int i =0;i<m;i++){
+            list.add(nums2[i]);
+        }
+
+        Collections.sort(list);
+        for(int i =0;i<list.size();i++){
+            nums1[i] = list.get(i);
         }
     }
 
