@@ -1,4 +1,4 @@
-// Leetcode 77 - cpmbinations
+// Leetcode 77 - combinations
 class Solution {
     public List<List<Integer>> combine(int n, int k) {
         List<List<Integer>> subsets = new ArrayList<>();
