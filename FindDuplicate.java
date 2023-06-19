@@ -29,6 +29,6 @@ public class FindDuplicate {
                 }
             }
         }
-        return low;
+        return nums[low];
     }
 }
