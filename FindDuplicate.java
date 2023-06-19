@@ -9,6 +9,7 @@ public class FindDuplicate {
         }
 
         System.out.println(find(arr));
+        sc.close();
     }
 
     public static int find(int[] nums){
