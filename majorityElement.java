@@ -8,5 +8,9 @@ public class MajorityElement {
         for(int i =0;i<n;i++){
             arr[i] = sc.nextInt();
         }
+        System.out.println(majority(arr));
+    }
+    public static int majority(int[] nums){
+        return 0;
     }
 }
