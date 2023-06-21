@@ -12,6 +12,18 @@ public class MajorityElement {
         sc.close();
     }
     public static int majority(int[] nums){
-        return 0;
+        int count =0;
+        int candidate = -1;
+        for(int num : nums){
+            if(count == 0){
+                candidate = nums;
+                count = 1;
+            }else if(candidate == num){
+                count++;
+            }else{
+                count--;
+            }
+        }
+        return candidate;
     }
 }
