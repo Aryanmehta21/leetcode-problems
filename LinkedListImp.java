@@ -32,17 +32,14 @@ class LinkedList {
         }
     }
     public ListNode reverseList(ListNode head) {
-        ListNode prev = null;  
-        ListNode current = head;
-    
-        
-        while(current != null) { 
-            ListNode next = current.next; 
-            current.next = prev;
-            prev = current;
-            current = next;
+        if(head == null || head.next == null){
+            return head;
         }
-       return prev;
+        ListNode newHead = reverseList(head.next);
+        ListNode headNext = head.next;
+        headNext.next = head;
+        head.next = null;
+        return newHead;
     }
     public void print(){
         ListNode current = head;
@@ -68,7 +65,7 @@ public class LinkedListImp{
             ll.add(x);
         }
         ll.print();
-        ll.reverseList(ll.head);
+        ll.head = ll.reverseList(ll.head);
         ll.print();
 
     }
