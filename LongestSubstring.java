@@ -7,6 +7,18 @@ public class LongestSubstring {
         System.out.println(length(str));
     }
     public static int length(String s){
-        
+        int max = 0;
+        HashSet<Character> set = new HashSet<>();
+        for(int i =0;i<s.length();i++){
+            for(int j = 0;j<s.length();j++){
+                if(set.contains(s.charAt(j))){
+                    set.remove(s.charAt(i));
+                }else{
+                    set.add(s.charAt(j));
+                    max = Math.max(j-i, max);
+                }
+            }
+        }
+        return max;
     }
 }
