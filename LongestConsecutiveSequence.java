@@ -9,6 +9,7 @@ public class LongestConsecutiveSequence {
       }  
 
       System.out.println(longestSeq(arr));
+      sc.close();
     }
     public static int longestSeq(int[] nums){
         if(nums.length == 0){
