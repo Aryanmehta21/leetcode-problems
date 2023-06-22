@@ -6,6 +6,7 @@ public class UniquePaths {
         int n = sc.nextInt();
 
         System.out.println(paths(m,n));
+        sc.close();
     }
 
     public static int paths(int m, int n){
