@@ -9,7 +9,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next;
  * }
  */
-class LinkedListImp {
+class LinkedList {
     public class ListNode{
         int val;
         ListNode next;
@@ -40,7 +40,18 @@ class LinkedListImp {
         head.next = null;
         return newHead;
     }
-    
+    public void print(){
+        ListNode current = head;
+        if(head == null){
+            System.out.println("List is empty.");
+            return;
+        }
+        while(current != null){
+            System.out.print(current.val + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
 }
 
 
