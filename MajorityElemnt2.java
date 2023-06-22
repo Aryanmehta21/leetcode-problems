@@ -9,6 +9,7 @@ public class MajorityElemnt2 {
         }
         List<Integer> list = majority(nums);
         System.out.println(list);
+        sc.close();
     }
 
     public static List<Integer> majority(int[] nums){
