@@ -9,6 +9,7 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next;
  * }
  */
+import java.util.*;
 class LinkedList {
     public class ListNode{
         int val;
@@ -31,14 +32,17 @@ class LinkedList {
         }
     }
     public ListNode reverseList(ListNode head) {
-        if(head == null || head.next == null){
-            return head;
+        ListNode prev = null;  
+        ListNode current = head;
+    
+        
+        while(current != null) { 
+            ListNode next = current.next; 
+            current.next = prev;
+            prev = current;
+            current = next;
         }
-        ListNode newHead = reverseList(head.next);
-        ListNode headNext = head.next;
-        headNext.next = head;
-        head.next = null;
-        return newHead;
+       return prev;
     }
     public void print(){
         ListNode current = head;
@@ -51,6 +55,22 @@ class LinkedList {
             current = current.next;
         }
         System.out.println();
+    }
+}
+
+public class LinkedListImp{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        LinkedList ll = new LinkedList();
+        int n = sc.nextInt();
+        for(int i =0;i<n;i++){
+            int x = sc.nextInt();
+            ll.add(x);
+        }
+        ll.print();
+        ll.reverseList(ll.head);
+        ll.print();
+
     }
 }
 
