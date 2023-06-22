@@ -5,6 +5,7 @@ public class LongestSubstring {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         System.out.println(length(str));
+        sc.close();
     }
     public static int length(String s){
         int max = 0;
