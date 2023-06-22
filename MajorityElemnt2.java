@@ -29,6 +29,10 @@ public class MajorityElemnt2 {
             }else{
                 count=1;
             }
+            if(count>nums.length/3 && !res.contains(nums[i])){
+                res.add(nums[i]);
+            }
         }
+        return res;
     }
 }
