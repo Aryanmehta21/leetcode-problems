@@ -7,5 +7,28 @@ public class MajorityElemnt2 {
         for(int i =0;i<n;i++){
             nums[i] = sc.nextInt();
         }
+        List<Integer> list = majority(nums);
+        System.out.println(list);
+    }
+
+    public static List<Integer> majority(int[] nums){
+        List<Integer> res = new ArrayList<>();
+        if(nums.length<=2){
+            for(int i =0;i<nums.length;i++){
+                if(!res.contains(nums[i])){
+                    res.add(nums[i]);
+                }
+            }
+            return res;
+        }
+        int count = 1;
+        Arrays.sort(nums);
+        for(int i =1;i<nums.length;i++){
+            if(nums[i] == nums[i-1]){
+                count++;
+            }else{
+                count=1;
+            }
+        }
     }
 }
