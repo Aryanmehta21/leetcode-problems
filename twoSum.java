@@ -22,6 +22,13 @@ public class TwoSum {
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int i =0;i<nums.length;i++){
             int ans = target- nums[i];
+            if(map.containsKey(ans)){
+                result[0] = map.get(ans);
+                result[1] = i;
+                return result;
+            }
+            map.put(nums[i], i);
         }
+        return result;
     }
 } 
