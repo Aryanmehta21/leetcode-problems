@@ -67,7 +67,7 @@ public class LinkedListImp{
         ll.print();
         ll.head = ll.reverseList(ll.head);
         ll.print();
-
+        sc.close();
     }
 }
 
