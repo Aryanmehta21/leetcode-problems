@@ -2,7 +2,7 @@
 import java.util.*;
 public class TwoSum {
     public static void main(String[] args){
-        Scanner sc = new SCanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
         for(int i =0;i<n;i++){
@@ -11,8 +11,9 @@ public class TwoSum {
         int target = sc.nextInt();
         int[] ans = twoSum(arr, target);
         for(int i =0;i<2;i++){
-            System.out.println(ans[i] + " ");
+            System.out.print(ans[i] + " ");
         }
+        sc.close();
     }
     public static int[] twoSum(int[] nums, int target) {
     int[] result = new int[2];
