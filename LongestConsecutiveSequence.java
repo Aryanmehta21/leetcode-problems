@@ -4,7 +4,7 @@ public class LongestConsecutiveSequence {
       Scanner sc = new Scanner(System.in);
       int n = sc.nextInt();
       int[] arr = new int[n];
-      for(int i =0;i<n;i++){
+      for(int i =0;i<arr.length;i++){
         arr[i]=sc.nextInt();
       }  
 
@@ -24,7 +24,7 @@ public class LongestConsecutiveSequence {
             if(!set.contains(num-1)){
                 int currentNum = num;
                 int currentLength = 1;
-                while(set.contains(num+1)){
+                while(set.contains(currentNum+1)){
                     currentNum = currentNum + 1;
                     currentLength++;
                 }

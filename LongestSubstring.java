@@ -1,5 +1,6 @@
 // Leetcode - 3
-class Solution {
+import java.util.*;
+public class LongestSubstring {
     public int lengthOfLongestSubstring(String s) {
         int max = 0;
         HashSet<Character> hash = new HashSet<Character>();
