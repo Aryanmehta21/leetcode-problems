@@ -9,6 +9,7 @@ public class BuySellStock3 {
         }
         int fee = sc.nextInt();
         System.out.println(profit(arr, fee));
+        sc.close();
     }
     public static int profit(int[] prices, int fee){
         int buy = Integer.MIN_VALUE;
