@@ -11,7 +11,7 @@ public class BuySellStock3 {
         System.out.println(profit(arr, fee));
     }
     public static int profit(int[] prices, int fee){
-        int buy = Integer.MAX_VALUE;
+        int buy = Integer.MIN_VALUE;
         int sell = 0;
 
         for(int price:prices){
