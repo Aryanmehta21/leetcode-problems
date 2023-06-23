@@ -7,6 +7,17 @@ public class BuySellStock3 {
         for(int i =0;i<n;i++){
             arr[i] = sc.nextInt();
         }
-        System.out.println(profit(arr));
+        int fee = sc.nextInt();
+        System.out.println(profit(arr, fee));
+    }
+    public static int profit(int[] prices, int fee){
+        int buy = Integer.MAX_VALUE;
+        int sell = 0;
+
+        for(int price:prices){
+            buy = Math.max(buy, sell - price);
+            sell = Math.max(sell, buy + price - fee);
+        }
+        return sell;
     }
 }
