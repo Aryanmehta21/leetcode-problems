@@ -8,6 +8,10 @@ public class BuySellStock5 {
             arr[i] = sc.nextInt();
         }
         System.out.println(maxProfit(arr));
-        sc.nextInt();
+        sc.close();
+    }
+
+    public static int maxProfit(int[] prices){
+        
     }
 }
