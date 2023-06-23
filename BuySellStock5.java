@@ -10,7 +10,6 @@ public class BuySellStock5 {
         System.out.println(maxProfit(arr));
         sc.close();
     }
-
     public static int maxProfit(int[] prices){
         int sell1 = 0;
         int sell2 = 0;
