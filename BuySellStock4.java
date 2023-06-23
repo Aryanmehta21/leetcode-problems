@@ -45,7 +45,7 @@ public class BuySellStock4 {
     //     }
     //     return ossp;
     // }
-
+        // Leetcode (short)...
     public static int profit(int[] prices){
         int buy = Integer.MIN_VALUE;
         int sell = 0;
