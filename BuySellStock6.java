@@ -11,7 +11,6 @@ public class BuySellStock6 {
         System.out.println(maxProfit(k, arr));
         sc.close();
     }
-
     public static int maxProfit(int k, int[] prices){
         int[][] dp = new int[k+1][prices.length];
         for(int i = 1;i<=k;i++){
