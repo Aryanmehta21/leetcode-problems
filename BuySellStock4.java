@@ -45,4 +45,8 @@ public class BuySellStock4 {
     //     }
     //     return ossp;
     // }
+
+    public static int profit(int[] prices){
+        
+    }
 }
