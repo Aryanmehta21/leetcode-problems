@@ -21,7 +21,28 @@ public class BuySellStock4 {
             int nssp = 0;
             int ncsp = 0;
 
-            if()
+            if(ocsp - prices[i] > obsp){
+                nbsp = ocsp - prices[i];
+            }else{
+                nbsp = obsp;
+            }
+
+            if(obsp + prices[i] > ossp){
+                nssp = obsp + prices[i];
+            }else{
+                nssp = ossp;
+            }
+
+            if(ossp > ocsp){
+                ncsp = ossp;
+            }else{
+                ncsp = ocsp;
+            }
+
+            obsp = nbsp;
+            ossp = nssp;
+            ocsp = ncsp;
         }
+        return ossp;
     }
 }
