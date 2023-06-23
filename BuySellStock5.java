@@ -7,5 +7,7 @@ public class BuySellStock5 {
         for(int i = 0;i<n;i++){
             arr[i] = sc.nextInt();
         }
+        System.out.println(maxProfit(arr));
+        sc.nextInt();
     }
 }
