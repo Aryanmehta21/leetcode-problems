@@ -47,6 +47,14 @@ public class BuySellStock4 {
     // }
 
     public static int profit(int[] prices){
-        
+        int buy = Integer.MIN_VALUE;
+        int sell = 0;
+        int cool = 0;
+        for(int price:prices){
+            buy = Math.max(buy, cool - price);
+            cool = Math.max(cool, sell);
+            sell = Math.max(sell, buy + price);
+        }
+        return sell;
     }
 }
