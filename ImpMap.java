@@ -36,6 +36,6 @@ class TestClass {
             System.out.println(sum);
             sum = 0; 
         }
-
+        sc.close();
     }
 }
