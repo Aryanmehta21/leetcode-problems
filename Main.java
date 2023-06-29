@@ -4,7 +4,7 @@ public class Main {
     static int INF = Integer.MAX_VALUE;
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner= new Scanner(System.in);
 
         System.out.print("Enter the number of vertices: ");
         int vertices = scanner.nextInt();
