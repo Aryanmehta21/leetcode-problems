@@ -33,7 +33,7 @@ public class Main {
         } else {
             System.out.println("Length of the shortest cycle: " + shortestCycleLength);
         }
-        sc.close();
+        scanner.close();
     }
 
     public static int findShortestCycle(List<List<int[]>> adjacencyList, int vertices) {
