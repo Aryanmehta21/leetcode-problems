@@ -51,7 +51,6 @@ public class Main {
                 for (int[] neighbor : adjacencyList.get(currentVertex)) {
                     int nextVertex = neighbor[0];
                     int weight = neighbor[1];
-
                     if (distance[nextVertex] == INF) {
                         distance[nextVertex] = distance[currentVertex] + weight;
                         queue.add(nextVertex);
