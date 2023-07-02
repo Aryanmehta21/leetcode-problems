@@ -17,7 +17,6 @@ Explanation: The longest common subsequence is "ace" and its length is 3.
 
 import java.util.*;
 public class LongestCommonSubsequence {
-
     public static int LCS(String text1, String text2){
         int[][] dp = new int[text1.length() + 1][text2.length()+1];
         for(int i = 1;i<dp.length;i++){
