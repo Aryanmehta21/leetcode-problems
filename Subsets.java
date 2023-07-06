@@ -10,8 +10,10 @@ public class Subsets {
     public static void generateSubsets(int index, int[] arr, List<Integer> curr, List<List<Integer>> res){
         res.add(new ArrayList<>(curr));
 
-        for(int i = index, i<arr.length;i++){
-            
+        for(int i = index; i<arr.length;i++){
+            curr.add(arr[i]);
+            generateSubsets(i+1, arr, curr, res);
+            curr.remove(curr.size()-1);
         }
 
     }
