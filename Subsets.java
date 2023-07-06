@@ -7,7 +7,9 @@ public class Subsets {
         return res;
     }
 
-    
+    public static void generateSubsets(int index, int[] arr, List<Integer> curr, List<List<Integer>> res){
+        
+    }
 
     public static void main(String[] args){
         Scanner sc  = new Scanner(System.in);
