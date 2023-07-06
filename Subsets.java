@@ -15,7 +15,6 @@ public class Subsets {
             generateSubsets(i+1, arr, curr, res);
             curr.remove(curr.size()-1);
         }
-
     }
 
     public static void main(String[] args){
@@ -27,5 +26,6 @@ public class Subsets {
         }
         List<List<Integer>> ans = subsets(arr);
         System.out.println(ans);
+        sc.close();
     }
 }
