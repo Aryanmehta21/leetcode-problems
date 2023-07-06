@@ -8,7 +8,12 @@ public class Subsets {
     }
 
     public static void generateSubsets(int index, int[] arr, List<Integer> curr, List<List<Integer>> res){
-        
+        res.add(new ArrayList<>(curr));
+
+        for(int i = index, i<arr.length;i++){
+            
+        }
+
     }
 
     public static void main(String[] args){
