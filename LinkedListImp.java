@@ -68,7 +68,6 @@ class LinkedList {
         System.out.println();
     }
 }
-
 public class LinkedListImp{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
