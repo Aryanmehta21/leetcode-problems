@@ -32,14 +32,28 @@ class LinkedList {
         }
     }
     public ListNode reverseList(ListNode head) {
-        if(head == null || head.next == null){
-            return head;
-        }
-        ListNode newHead = reverseList(head.next);
-        ListNode headNext = head.next;
-        headNext.next = head;
-        head.next = null;
-        return newHead;
+        // Recursively
+        // if(head == null || head.next == null){
+        //     return head;
+        // }
+        // ListNode newHead = reverseList(head.next);
+        // ListNode headNext = head.next;
+        // headNext.next = head;
+        // head.next = null;
+        // return newHead;
+        
+        // Iteratively
+            ListNode curr = head;
+            ListNode prev = null;
+            ListNode next = null;
+
+            while(curr != null){
+                next = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = next;
+            }
+            return prev;
     }
     public void print(){
         ListNode current = head;
