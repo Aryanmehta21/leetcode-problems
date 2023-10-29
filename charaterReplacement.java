@@ -1,5 +1,4 @@
 // Leetcode - 424
-
 class Solution {
     public int characterReplacement(String s, int k) {
         int len = s.length();
